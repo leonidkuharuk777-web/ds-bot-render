@@ -382,7 +382,8 @@ const reason =
     `🚫 **${target.tag}** находится в ban.\n` +
     `📝 Причина: **${data.reason}**\n` +
     `📅 Добавлен: <t:${Math.floor(data.date / 1000)}:R>`,
-
+ephemeral: true
+});
         } else {
 
             await interaction.reply({
