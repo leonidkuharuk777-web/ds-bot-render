@@ -379,10 +379,9 @@ const reason =
 
             await interaction.reply({
                 content:
-                    `🚫 **${target.tag}** находится в ban.\n` +
-                    `📅 Добавлен: <t:${Math.floor(data.date / 1000)}:R>`,
-                ephemeral: true
-            });
+    `🚫 **${target.tag}** находится в ban.\n` +
+    `📝 Причина: **${data.reason}**\n` +
+    `📅 Добавлен: <t:${Math.floor(data.date / 1000)}:R>`,
 
         } else {
 
