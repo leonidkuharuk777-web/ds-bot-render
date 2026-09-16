@@ -1,0 +1,15 @@
+
+{
+  "name": "fakeban-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot with internal fake-ban system",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2"
+  }
+}
+
