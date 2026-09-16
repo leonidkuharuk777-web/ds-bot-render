@@ -19,7 +19,19 @@ const client = new Client({
 const TOKEN = process.env.DISCORD_TOKEN;
 const CLIENT_ID = process.env.CLIENT_ID;
 const GUILD_ID = process.env.GUILD_ID;
+const http = require("http");
 
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+    res.writeHead(200, {
+        "Content-Type": "text/plain; charset=utf-8"
+    });
+
+    res.end("Discord bot is running!");
+}).listen(PORT, "0.0.0.0", () => {
+    console.log(`HTTP сервер запущен на порту ${PORT}`);
+});
 // ==========================================
 // FAKE BAN DATABASE
 // ==========================================
